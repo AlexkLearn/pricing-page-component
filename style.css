@@ -3,4 +3,26 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --primary-color: #4ade80;
+  --primary-light: #86efac;
+  --primary-dark: #22c55e;
+  --bg-dark: #1a1a1a;
+  --text-light: #f3f4f6;
+  --text-gray: #9ca3af;
+  --card-bg: #252525;
+  --card-hover: #2e2e2e;
+  --border-radius: 12px;
+  --shadow-sm: 0 4px 6px rgba(0 0 0 0.1);
+  --shadow-md: 0 10px 15px rgba(0 0 0 0.1);
+  --shadow-lg: 0 20px 25px rgba(0 0 0 0.1);
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100dvh;
 }
