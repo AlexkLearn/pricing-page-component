@@ -7,14 +7,18 @@
 }
 
 :root {
-  --primary-color: #4ade80;
-  --primary-light: #86efac;
-  --primary-dark: #22c55e;
-  --bg-dark: #1a1a1a;
-  --text-light: #f3f4f6;
-  --text-gray: #9ca3af;
-  --card-bg: #252525;
-  --card-hover: #2e2e2e;
+  --primary-color: #e8b95e;
+  --primary-light: #f4d58a;
+  --primary-dark: #b98225;
+  --bg-dark: #111b27;
+  --text-light: #f5f7fa;
+  --text-gray: #b0bcc9;
+  --card-bg: #1b2938;
+  --card-hover: #223447;
+  --danger-color: #ff8585;
+  --border-color: rgba(210, 222, 235, .14);
+  --button-bg: rgba(255, 255, 255, .06);
+  --button-border: rgba(255, 255, 255, .14);
   --border-radius: 12px;
   --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -88,14 +92,14 @@ header p {
 .card-header {
   padding: 30px;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .plan-icon {
   width: 70px;
   height: 70px;
   background: linear-gradient(135deg,
-    rgba(74, 222, 128, .2), rgba(74, 222, 128, .05)
+    rgba(232, 185, 94, .2), rgba(232, 185, 94, .05)
   );
   border-radius: 50%;
   display: flex;
@@ -167,11 +171,10 @@ h3 {
 }
 
 .features li i.fa-times {
-  color: #ef4444;
+  color: var(--danger-color);
 }
 
 .features li.disabled {
-  opacity: .7;
   color: var(--text-gray);
 }
 
@@ -187,8 +190,8 @@ h3 {
   font-weight: 600;
   text-align: center;
   color: var(--text-light);
-  background-color: rgba(255, 255, 2555, .1);
-  border: 2px solid rgba(255, 255, 2555, .1);
+  background-color: var(--button-bg);
+  border: 2px solid var(--button-border);
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: all .3 ease;
@@ -196,13 +199,13 @@ h3 {
 
 .btn:hover {
   border-color: var(--primary-color);
-  background-color: rgba(74, 222, 128, .1);
+  background-color: rgba(232, 185, 94, .12);
 }
 
 .btn-accent {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
-  color: #000;
+  color: var(--bg-dark);
   animation: pulse 2s infinite;
 }
 
@@ -226,7 +229,7 @@ h3 {
   top: 15px;
   right: 15px;
   background-color: var(--primary-color);
-  color: #000;
+  color: var(--bg-dark);
   font-size: .8rem;
   font-weight: 600;
   padding: 5px 12px;
@@ -339,14 +342,14 @@ h3 {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, .7);
+    box-shadow: 0 0 0 0 rgba(232, 185, 94, .7);
   }
 
   70% {
-    box-shadow: 0 0 0 7px rgba(74, 222, 128, 0);
+    box-shadow: 0 0 0 7px rgba(232, 185, 94, 0);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+    box-shadow: 0 0 0 0 rgba(232, 185, 94, 0);
   }
 }
